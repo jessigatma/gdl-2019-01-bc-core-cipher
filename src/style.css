@@ -15,4 +15,11 @@ img {
     max-width: 30%;
     height: auto;
 }
-
+button {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: #F9A91A;
+	min-height: 36px; 
+	min-width: 88px;
+}

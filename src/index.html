@@ -33,10 +33,45 @@
     <div>
       <button id="continuar1" onclick="clickencontinuar()">Continuar</button>
     </div>
-      
-    </div>
+      </div>
+<br><br>
 
+    <div>
+
+      <p> ¡Bienvenido! Comandante Juanito Perez
     
+        <label id="WelcomeRango"></label>    <label id='WelcomeNombre'></label>
+      
+      </p>
+
+      <p id="codigo" class="helveticaText">Introduce tu código de operativo 
+        <input type="number" id="codigooperativo" placeholder="Código">
+      </p>
+
+      <br>
+
+      <p>Escriba su mensaje</p>
+
+      <textarea name="message" rows="10" cols="80"></textarea>
+
+      <div>
+        <button id="cifrar" onclick="clickCifrar()">Cifrar</button>
+        <button id="descifrar" onclick="clickDescifrar()">Descifrar</button></div>
+
+    </div>
+    
+    <div>
+      <p>Tu Mensaje cifrado/descifrado es:</p>
+
+      <textarea name="message" rows="10" cols="80"></textarea>
+
+      <p>¿Volver a cifrar/descifrar?</p>
+
+      <button id="buttonsi" onclick="clickSi()">Sí</button>
+      <button id="buttonno" onclick="clickNo()">No</button>
+
+      </div>
+  
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
