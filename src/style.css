@@ -1,0 +1,18 @@
+html {
+	background-image: url("https://st2.depositphotos.com/2873617/11234/v/950/depositphotos_112344188-stock-illustration-abstract-background-with-white-geometric.jpg");
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+body {
+    font-family: Arial, Helvetica, Sans-serif;
+    color: black;
+    text-align: center;
+   /* background-color: blue; */
+  }
+
+img {
+    max-width: 30%;
+    height: auto;
+}
+
