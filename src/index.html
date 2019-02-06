@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
+    <div id=firstScreen  style="display:block">
       <h1><big>Procuraduria General de la República</big></h1>
       <h2>Agencia de Investigación Criminal de Laboratoria</h2>
       <h3><img src="https://media.giphy.com/media/3o6MbcHnEXF1b1t4ic/giphy.gif"/></h3>
@@ -15,64 +15,69 @@
       <p><b> Ingresa tus datos: </b></p>
       
      <p>
-          <input list="elrango" name="rango" placeholder="Selecciona tu Rango">
-          <datalist id="elrango">
-            <option value="Policía">
-            <option value="Suboficial">
-            <option value="Subinspector">
-            <option value="Inspector en Jefe">
-            <option value="Inspector General">
-            <option value="Comisario">
-            <option value="Comisionado General">
-          </datalist></p>
-        
-      <p id="entrar" class="helveticaText" >
-        <input type="text" id="nombredepoli" placeholder="Escribe tu nombre"> </p>
+          <input list="theRank" id="listRank" placeholder="Selecciona tu Rango">
+          <datalist id="theRank">
+            <option value="Policía"></option>
+            <option value="Suboficial"></option>
+            <option value="Subinspector"></option>
+            <option value="Inspector en Jefe"></option>
+            <option value="Inspector General"></option>
+            <option value="Comisario"></option>
+            <option value="Comisionado General"></option>
+          </datalist>
+          
+        </p> 
+
+
+      <p>
+        <input type="text" id="policeName" placeholder="Escribe tu nombre"> </p>
 
     <br>
     <div>
-      <button id="continuar1" onclick="clickencontinuar()">Continuar</button>
+      <button id="continue">Continuar</button>
     </div>
       </div>
 <br><br>
-
+ <!--SEGUNDA PANTALLA DEL PROGRAMA CIPHER -->
     <div>
 
-      <p> ¡Bienvenido! Comandante Juanito Perez
-    
-        <label id="WelcomeRango"></label>    <label id='WelcomeNombre'></label>
+      <p> ¡Bienvenido 
+
+        <label id="rankWelcome"></label>       <label id="nameWelcome"></label> !
       
       </p>
 
-      <p id="codigo" class="helveticaText">Introduce tu código de operativo 
-        <input type="number" id="codigooperativo" placeholder="Código">
+      <p>Introduce tu código de operativo 
+        <input type="number" id="operativeCode" placeholder="Código">
       </p>
 
       <br>
 
       <p>Escriba su mensaje</p>
 
-      <textarea name="message" rows="10" cols="80"></textarea>
+      <textarea  id="message1" rows="10" cols="80"> </textarea>
 
       <div>
-        <button id="cifrar" onclick="clickCifrar()">Cifrar</button>
-        <button id="descifrar" onclick="clickDescifrar()">Descifrar</button></div>
+        <button id="encodeButton">Cifrar</button>
+        <button id="decodeButton">Descifrar</button></div>
 
-    </div>
-    
-    <div>
+    </div> 
+    <br> <br>
+  <!--TERCER PANTALLA DEL PROGRAMA CIPHER -->
+    <div> 
       <p>Tu Mensaje cifrado/descifrado es:</p>
 
-      <textarea name="message" rows="10" cols="80"></textarea>
+      <textarea id="message2" rows="10" cols="80"></textarea>
 
       <p>¿Volver a cifrar/descifrar?</p>
 
-      <button id="buttonsi" onclick="clickSi()">Sí</button>
-      <button id="buttonno" onclick="clickNo()">No</button>
+      <button id="yesButton" onclick="yesClick()">Sí</button>
+      <button id="noButton" onclick="noClick()">No</button>
 
       </div>
   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
