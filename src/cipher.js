@@ -45,6 +45,6 @@ window.cipher = {
     }
     return texto;
   }
-  // ... 
+  
 };
 
