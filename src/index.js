@@ -7,25 +7,25 @@ function continueClick(){
       document.getElementById("nameWelcome").innerHTML= userName; //el nombre del usuario lo da al HTML
 
       firstScreen.style.display = 'none';
-      secondScreen.style.display = 'block';
+      secondScreen.style.display = 'block'; //me muestra la segunda pantalla
 }
 document.getElementById("continue").addEventListener("click",continueClick,false); //Acciona el botón de Continuar
 
 
 function llamarencode(){
-    let offset = parseInt(document.getElementById("operativeCode").value);
-    let word  = document.getElementById("message1").value;
-    let cifrado = cipher.encode(offset,word);
+    let offset = parseInt(document.getElementById("operativeCode").value); // Convierte mi type:number en número
+    let word  = document.getElementById("message1").value; //obtiene la cadena de texto del textarea 
+    let cifrado = cipher.encode(offset,word); //llama al objeto cipher.js
 
-       document.getElementById("message2").value=cifrado;
+       document.getElementById("message2").value=cifrado; //Me arroja el mensaje en el segundo recuadro, después de cifrarlo
 
        firstScreen.style.display = 'none';
        secondScreen.style.display = 'none';
-       thirdScreen.style.display = 'block';
-       document.getElementById("chooseCode").innerHTML = "cifrado";
-       document.getElementById("endecode").innerHTML = "Cifrar";
+       thirdScreen.style.display = 'block'; //Me muestra sólo la tercer pantalla
+       document.getElementById("chooseCode").innerHTML = "cifrado"; //Si el usuario escoge cifrar, manda al HTML el mensaje: cifrado
+       document.getElementById("endecode").innerHTML = "Cifrar"; //Si el usuario escoge cifrar, pregunta al usuario si quiere volver a cifrar
 }
-  document.getElementById("encodeButton").addEventListener("click",llamarencode,false);
+  document.getElementById("encodeButton").addEventListener("click",llamarencode,false); //Acciona el boton cifrar
 
 
 function llamardecode(){
@@ -41,17 +41,17 @@ function llamardecode(){
         document.getElementById("chooseCode").innerHTML = "descifrado";
         document.getElementById("endecode").innerHTML = "Descifrar";
 }
-  document.getElementById("decodeButton").addEventListener("click",llamardecode,false);
+  document.getElementById("decodeButton").addEventListener("click",llamardecode,false); //Acciona el botón descifrar
 
 function yesClick(){
-    document.getElementById("message1").value="";
+    document.getElementById("message1").value=""; //limpia los recuadros ya utilizados anteriormente
     document.getElementById("message2").value="";
 
     firstScreen.style.display = 'none';
-    secondScreen.style.display = 'block';
+    secondScreen.style.display = 'block'; //Vuelve a la pantalla para volver a cifrar, pantalla 2
     thirdScreen.style.display = 'none';
 }
-document.getElementById("yesButton").addEventListener("click",yesClick,false);
+document.getElementById("yesButton").addEventListener("click",yesClick,false); //Acciona el botón sí
 
 function noClick(){
     document.getElementById("message1").value=""; //LIMPIA PANTALLA
@@ -59,8 +59,8 @@ function noClick(){
     document.getElementById("listRank").value = ""; 
     document.getElementById("policeName").value= "";
 
-    firstScreen.style.display = 'block';
+    firstScreen.style.display = 'block'; //Vuelve al inicio, muestra la pantalla 1
     secondScreen.style.display = 'none';
     thirdScreen.style.display = 'none';
 }
-document.getElementById("noButton").addEventListener("click",noClick,false);
+document.getElementById("noButton").addEventListener("click",noClick,false); //Acciona el botón no

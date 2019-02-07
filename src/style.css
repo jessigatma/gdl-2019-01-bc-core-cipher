@@ -1,27 +1,30 @@
 html {
 	background-image: url("https://st2.depositphotos.com/2873617/11234/v/950/depositphotos_112344188-stock-illustration-abstract-background-with-white-geometric.jpg");/*nos muestra la imagen de fondo para todo lo contenido en html*/
+	/*Es el fondo de mi imagen que va a estar en todo el HTML */
 	background-attachment: fixed; /* Mueve la imagen cuando hago scroll*/
 }
 
-body {
+body { /* Estas son las características que tendra el cuerpo de mi página */
 	font-family: Georgia, sans-serif;
     color: black;
     text-align: center;
      }
-h1 {
+h1 { /*El título quise que tuviera otro tipo de letra, escogí impact*/
 	font-family: impact, Charcoal, sans-serif;
 	font-weight: bold;
+	color: rgba(23, 10, 138, 0.733);;
 }
-h2 {
-    font-family: impact, Charcoal, sans-serif;
+h2 { /*El subtítulo lo quise con otras características así que elegí que fuera más delgada con lighter */
+	font-family: impact, Charcoal, sans-serif;
+	color: rgba(23, 10, 138, 0.733);
 	font-weight: lighter;
 	font-size: normal;
 }
 img {
-    max-width: 30%;
-    height: auto;
+    max-width: 28%; /*Las características de la imagen de la primer pantalla*/
+    height: auto; 
 }
-label{
+label{ /*lo que puse como label es la info que introduce el usuario y quiero que me la arroje con este formato*/
 	font-weight: bold;
 	font-size: large;
 }
@@ -34,12 +37,9 @@ button {
 	min-height: 36px; 
 	min-width: 88px;
 }
-#secondScreen {
-	display: none;
+#secondScreen { 
+	display: none; /*Para ocultar o mostrar pantallas */
 }
-#thirdScreen{
+#thirdScreen {
 	display: none;
-}
-#message1 {
-	text-transform: uppercase;
 }

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="firstScreen">
-      <h1><big>PROCURADURIA GENERAL DE LA REPÚBLICA</big></h1>
+    <div id="firstScreen"> <!--Cada pantalla está dividida por div-->
+      <h1><big>PROCURADURIA GENERAL DE LA REPÚBLICA</big></h1> <!--Necesitaba un título grande para la página-->
       <h2>Agencia de Investigación Criminal de Laboratoria</h2>
       <h3><img src="https://i.gifer.com/G5zm.gif"/></h3>
 
@@ -15,7 +15,7 @@
       <p><b> Ingresa tus datos: </b></p>
       
      <p>
-          <input list="theRank" id="listRank" placeholder="Selecciona tu Rango">
+          <input list="theRank" id="listRank" placeholder="Selecciona tu Rango"> <!--Decidí desplazar la lista de rangos ya definidos-->
           <datalist id="theRank">
             <option value="Policía"></option>
             <option value="Suboficial"></option>
@@ -30,11 +30,11 @@
 
 
       <p>
-        <input type="text" id="policeName" placeholder="Escribe tu nombre"> </p>
+        <input type="text" id="policeName" placeholder="Escribe tu nombre"> </p> <!--el usuario ingresa el nombre-->
 
     <br>
     <div>
-      <button id="continue">Continuar</button>
+      <button id="continue">Continuar</button> <!--Aquí está el primer botón que me pasa a la siguiente pantalla-->
     </div>
       </div>
 <br><br>
@@ -43,35 +43,35 @@
 
       <p> ¡Bienvenido 
 
-        <label id="rankWelcome"></label>       <label id="nameWelcome"></label> !
+        <label id="rankWelcome"></label>       <label id="nameWelcome"></label> ! <!--Regresa el rango y el nombre que ingresó el usuario-->
       
       </p>
 
       <p>Introduce tu <b><em>código de operativo </em></b>
-        <input type="number" id="operativeCode" placeholder="Código">
+        <input type="number" id="operativeCode" placeholder="Código"> <!--Este código de operativo sera el offset (las veces que se correrán las letras)-->
       </p>
 
       <br>
 
       <p>Escriba su mensaje</p>
 
-      <textarea  id="message1" rows="10" cols="80"> </textarea>
+      <textarea  id="message1" rows="10" cols="80"> </textarea> <!--Hice un área rectangular para ingresar el texto-->
 
       <div>
-        <button id="encodeButton">Cifrar</button>
+        <button id="encodeButton">Cifrar</button> <!--Estos botones son los que hacen la magia (cifran o descifran el mensaje-->
         <button id="decodeButton">Descifrar</button></div>
 
     </div> 
     <br> <br>
   <!--TERCER PANTALLA DEL PROGRAMA CIPHER -->
     <div id="thirdScreen"> 
-      <p>Tu Mensaje <label id="chooseCode"></label> es:</p>
+      <p>Tu Mensaje <label id="chooseCode"></label> es:</p> <!--Coloqué una label para que diga al usuario si cifró o descifró-->
 
       <textarea id="message2" rows="10" cols="80"></textarea>
 
-      <p>¿Volver a <label id="endecode"></label> ?</p>
+      <p>¿Volver a <label id="endecode"></label> ?</p> <!--Le pregunto al usuario si volverá a cifrar o descifrar según sea el caso-->
 
-      <button id="yesButton" onclick="yesClick()">Sí</button>
+      <button id="yesButton" onclick="yesClick()">Sí</button> <!--Estos botones vuelven a pantallas anteriores-->
       <button id="noButton" onclick="noClick()">No</button>
 
       </div>
