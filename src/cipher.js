@@ -22,8 +22,6 @@ window.cipher = {
     return texto;
   },
 
-
-
   decode: function (offset, word) {
 
     let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
