@@ -7,9 +7,9 @@
   </head>
   <body>
     <div id="firstScreen">
-      <h1><big>Procuraduria General de la República</big></h1>
+      <h1><big>Procuraduría General de la República</big></h1>
       <h2>Agencia de Investigación Criminal de Laboratoria</h2>
-      <h3><img src="https://media.giphy.com/media/3o6MbcHnEXF1b1t4ic/giphy.gif"/></h3>
+      <h3><img src="escudolaboratoria.jpg"/></h3>
 
     
       <p><b> Ingresa tus datos: </b></p>
@@ -47,7 +47,7 @@
       
       </p>
 
-      <p>Introduce tu código de operativo 
+      <p>Introduce tu <b><em>código de operativo </em></b>
         <input type="number" id="operativeCode" placeholder="Código">
       </p>
 
@@ -65,11 +65,11 @@
     <br> <br>
   <!--TERCER PANTALLA DEL PROGRAMA CIPHER -->
     <div id="thirdScreen"> 
-      <p>Tu Mensaje cifrado/descifrado es:</p>
+      <p>Tu Mensaje <label id="chooseCode"></label> es:</p>
 
       <textarea id="message2" rows="10" cols="80"></textarea>
 
-      <p>¿Volver a cifrar/descifrar?</p>
+      <p>¿Volver a <label id="endecode"></label> ?</p>
 
       <button id="yesButton" onclick="yesClick()">Sí</button>
       <button id="noButton" onclick="noClick()">No</button>

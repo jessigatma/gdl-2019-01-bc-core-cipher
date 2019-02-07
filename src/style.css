@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: Arial, Helvetica, Sans-serif;
+	font-family: ITahoma, Geneva, sans-serif;;
     color: black;
     text-align: center;
      }
@@ -13,11 +13,16 @@ img {
     max-width: 30%;
     height: auto;
 }
+label{
+	font-weight: bold;
+	font-size: large;
+}
 button {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: beige; 
 	font-weight: bold;
 	text-transform: uppercase;
-	background-color: #F9A91A;
+	background-color: rgb(30, 39, 128);
 	min-height: 36px; 
 	min-width: 88px;
 }
@@ -26,4 +31,7 @@ button {
 }
 #thirdScreen{
 	display: none;
+}
+#message1 {
+	text-transform: uppercase;
 }

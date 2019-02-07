@@ -22,13 +22,15 @@ function llamarencode(){
        firstScreen.style.display = 'none';
        secondScreen.style.display = 'none';
        thirdScreen.style.display = 'block';
+       document.getElementById("chooseCode").innerHTML = "cifrado";
+       document.getElementById("endecode").innerHTML = "Cifrar";
 }
   document.getElementById("encodeButton").addEventListener("click",llamarencode,false);
 
 
 function llamardecode(){
      let offset = parseInt(document.getElementById("operativeCode").value);
-     let word  = document.getElementById("message1").value;
+     let word = document.getElementById("message1").value;
      let cifrado = cipher.decode(offset,word);
   
         document.getElementById("message2").value=cifrado;
@@ -36,6 +38,8 @@ function llamardecode(){
         firstScreen.style.display = 'none';
         secondScreen.style.display = 'none';
         thirdScreen.style.display = 'block';
+        document.getElementById("chooseCode").innerHTML = "descifrado";
+        document.getElementById("endecode").innerHTML = "Descifrar";
 }
   document.getElementById("decodeButton").addEventListener("click",llamardecode,false);
 
