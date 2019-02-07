@@ -6,8 +6,11 @@ function continueClick(){
       document.getElementById("rankWelcome").innerHTML = userRank; //el valor dado al rango, lo arroja en el HTML
       document.getElementById("nameWelcome").innerHTML= userName; //el nombre del usuario lo da al HTML
 
-      firstScreen.style.display = 'none';
-      secondScreen.style.display = 'block'; //me muestra la segunda pantalla
+    const firstScreen = document.getElementById("firstScreen").value;
+    const secondScreen = document.getElementById("secondScreen").value;
+      
+      firstScreen.style.display = "none";
+      secondScreen.style.display = "block"; //me muestra la segunda pantalla
 }
 document.getElementById("continue").addEventListener("click",continueClick,false); //Acciona el botón de Continuar
 
@@ -19,9 +22,13 @@ function llamarencode(){
 
        document.getElementById("message2").value=cifrado; //Me arroja el mensaje en el segundo recuadro, después de cifrarlo
 
-       firstScreen.style.display = 'none';
-       secondScreen.style.display = 'none';
-       thirdScreen.style.display = 'block'; //Me muestra sólo la tercer pantalla
+    const firstScreen = document.getElementById("firstScreen").value;
+    const secondScreen = document.getElementById("secondScreen").value;
+    const thirdScreen = document.getElementById("thirdScreen").value;
+
+       firstScreen.style.display = "none";
+       secondScreen.style.display = "none";
+       thirdScreen.style.display = "block"; //Me muestra sólo la tercer pantalla
        document.getElementById("chooseCode").innerHTML = "cifrado"; //Si el usuario escoge cifrar, manda al HTML el mensaje: cifrado
        document.getElementById("endecode").innerHTML = "Cifrar"; //Si el usuario escoge cifrar, pregunta al usuario si quiere volver a cifrar
 }
@@ -34,10 +41,15 @@ function llamardecode(){
      let cifrado = cipher.decode(offset,word);
   
         document.getElementById("message2").value=cifrado;
+    
+     const firstScreen = document.getElementById("firstScreen").value;
+     const secondScreen = document.getElementById("secondScreen").value;
+     const thirdScreen = document.getElementById("thirdScreen").value;
 
-        firstScreen.style.display = 'none';
-        secondScreen.style.display = 'none';
-        thirdScreen.style.display = 'block';
+        firstScreen.style.display = "none";
+        secondScreen.style.display = "none";
+        thirdScreen.style.display = "block";
+
         document.getElementById("chooseCode").innerHTML = "descifrado";
         document.getElementById("endecode").innerHTML = "Descifrar";
 }
@@ -47,9 +59,13 @@ function yesClick(){
     document.getElementById("message1").value=""; //limpia los recuadros ya utilizados anteriormente
     document.getElementById("message2").value="";
 
-    firstScreen.style.display = 'none';
-    secondScreen.style.display = 'block'; //Vuelve a la pantalla para volver a cifrar, pantalla 2
-    thirdScreen.style.display = 'none';
+    const firstScreen = document.getElementById("firstScreen").value;
+    const secondScreen = document.getElementById("secondScreen").value;
+    const thirdScreen = document.getElementById("thirdScreen").value;
+
+      firstScreen.style.display = "none";
+      secondScreen.style.display = "block"; //Vuelve a la pantalla para volver a cifrar, pantalla 2
+      thirdScreen.style.display = "none";
 }
 document.getElementById("yesButton").addEventListener("click",yesClick,false); //Acciona el botón sí
 
@@ -59,8 +75,12 @@ function noClick(){
     document.getElementById("listRank").value = ""; 
     document.getElementById("policeName").value= "";
 
-    firstScreen.style.display = 'block'; //Vuelve al inicio, muestra la pantalla 1
-    secondScreen.style.display = 'none';
-    thirdScreen.style.display = 'none';
+    const firstScreen = document.getElementById("firstScreen").value;
+    const secondScreen = document.getElementById("secondScreen").value;
+    const thirdScreen = document.getElementById("thirdScreen").value;
+
+      firstScreen.style.display = "block"; //Vuelve al inicio, muestra la pantalla 1
+      secondScreen.style.display = "none";
+      thirdScreen.style.display = "none";
 }
 document.getElementById("noButton").addEventListener("click",noClick,false); //Acciona el botón no
