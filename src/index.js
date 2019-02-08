@@ -1,3 +1,5 @@
+
+
 function continueClick(){
 
     const userRank = document.getElementById("listRank").value; //toma el valor que el usuario escoge en la lista
@@ -5,12 +7,12 @@ function continueClick(){
 
       document.getElementById("rankWelcome").innerHTML = userRank; //el valor dado al rango, lo arroja en el HTML
       document.getElementById("nameWelcome").innerHTML= userName; //el nombre del usuario lo da al HTML
-
-    const firstScreen = document.getElementById("firstScreen").value;
-    const secondScreen = document.getElementById("secondScreen").value;
       
-      firstScreen.style.display = "none";
-      secondScreen.style.display = "block"; //me muestra la segunda pantalla
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    
+       firstScreen.style.display = 'none';
+       secondScreen.style.display = 'block'; //me muestra la segunda pantalla
 }
 document.getElementById("continue").addEventListener("click",continueClick,false); //Acciona el botón de Continuar
 
@@ -22,9 +24,9 @@ function llamarencode(){
 
        document.getElementById("message2").value=cifrado; //Me arroja el mensaje en el segundo recuadro, después de cifrarlo
 
-    const firstScreen = document.getElementById("firstScreen").value;
-    const secondScreen = document.getElementById("secondScreen").value;
-    const thirdScreen = document.getElementById("thirdScreen").value;
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
 
        firstScreen.style.display = "none";
        secondScreen.style.display = "none";
@@ -42,9 +44,9 @@ function llamardecode(){
   
         document.getElementById("message2").value=cifrado;
     
-     const firstScreen = document.getElementById("firstScreen").value;
-     const secondScreen = document.getElementById("secondScreen").value;
-     const thirdScreen = document.getElementById("thirdScreen").value;
+     const firstScreen = document.getElementById("firstScreen");
+     const secondScreen = document.getElementById("secondScreen");
+     const thirdScreen = document.getElementById("thirdScreen");
 
         firstScreen.style.display = "none";
         secondScreen.style.display = "none";
@@ -59,9 +61,9 @@ function yesClick(){
     document.getElementById("message1").value=""; //limpia los recuadros ya utilizados anteriormente
     document.getElementById("message2").value="";
 
-    const firstScreen = document.getElementById("firstScreen").value;
-    const secondScreen = document.getElementById("secondScreen").value;
-    const thirdScreen = document.getElementById("thirdScreen").value;
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
 
       firstScreen.style.display = "none";
       secondScreen.style.display = "block"; //Vuelve a la pantalla para volver a cifrar, pantalla 2
@@ -75,9 +77,9 @@ function noClick(){
     document.getElementById("listRank").value = ""; 
     document.getElementById("policeName").value= "";
 
-    const firstScreen = document.getElementById("firstScreen").value;
-    const secondScreen = document.getElementById("secondScreen").value;
-    const thirdScreen = document.getElementById("thirdScreen").value;
+    const firstScreen = document.getElementById("firstScreen");
+    const secondScreen = document.getElementById("secondScreen");
+    const thirdScreen = document.getElementById("thirdScreen");
 
       firstScreen.style.display = "block"; //Vuelve al inicio, muestra la pantalla 1
       secondScreen.style.display = "none";
