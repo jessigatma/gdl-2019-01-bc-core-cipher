@@ -11,8 +11,8 @@ function continueClick(){
     const firstScreen = document.getElementById("firstScreen");
     const secondScreen = document.getElementById("secondScreen");
     
-       firstScreen.style.display = 'none';
-       secondScreen.style.display = 'block'; //me muestra la segunda pantalla
+       firstScreen.style.display = "none";
+       secondScreen.style.display = "block"; //me muestra la segunda pantalla
 }
 document.getElementById("continue").addEventListener("click",continueClick,false); //Acciona el botón de Continuar
 
