@@ -3,15 +3,15 @@ html {
 	/*Es el fondo de mi imagen que va a estar en todo el HTML */
 	background-attachment: fixed; /* Mueve la imagen cuando hago scroll*/
 }
-
 body { /* Estas son las características que tendra el cuerpo de mi página */
 	font-family: Georgia, sans-serif;
     color: black;
     text-align: center;
-     }
+}
 h1 { /*El título quise que tuviera otro tipo de letra, escogí impact*/
 	font-family: impact, Charcoal, sans-serif;
 	font-weight: bold;
+	font-size: xx-large;
 	color: rgba(23, 10, 138, 0.733);
 }
 h2 { /*El subtítulo lo quise con otras características así que elegí que fuera más delgada con lighter */

@@ -7,9 +7,9 @@
   </head>
   <body>
     <div id="firstScreen"> <!--Cada pantalla está dividida por div-->
-      <h1><big>PROCURADURIA GENERAL DE LA REPÚBLICA</big></h1> <!--Necesitaba un título grande para la página-->
+      <h1>PROCURADURIA GENERAL DE LA REPÚBLICA</h1> <!--Necesitaba un título grande para la página-->
       <h2>Agencia de Investigación Criminal de Laboratoria</h2>
-      <h3><img src="https://i.gifer.com/G5zm.gif"/></h3>
+      <img src="https://i.gifer.com/G5zm.gif"/>
 
     
       <p><b> Ingresa tus datos: </b></p>
@@ -37,7 +37,7 @@
       <button id="continue">Continuar</button> <!--Aquí está el primer botón que me pasa a la siguiente pantalla-->
     </div>
       </div>
-<br><br>
+<br>
  <!--SEGUNDA PANTALLA DEL PROGRAMA CIPHER -->
     <div id= "secondScreen">
 
@@ -62,19 +62,19 @@
         <button id="decodeButton">Descifrar</button></div>
 
     </div> 
-    <br> <br>
+    <br> 
   <!--TERCER PANTALLA DEL PROGRAMA CIPHER -->
     <div id="thirdScreen"> 
       <p>Tu Mensaje <label id="chooseCode"></label> es:</p> <!--Coloqué una label para que diga al usuario si cifró o descifró-->
 
-      <textarea id="message2" rows="10" cols="80"></textarea>
+      <textarea id="message2" rows="10" cols="80" ></textarea>
 
       <p>¿Volver a <label id="endecode"></label> ?</p> <!--Le pregunto al usuario si volverá a cifrar o descifrar según sea el caso-->
 
       <button id="yesButton" onclick="yesClick()">Sí</button> <!--Estos botones vuelven a pantallas anteriores-->
       <button id="noButton" onclick="noClick()">No</button>
 
-      </div>
+    </div>
   
     <script src="cipher.js"></script>
     <script src="index.js"></script>

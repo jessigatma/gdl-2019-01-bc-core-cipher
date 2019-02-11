@@ -19,7 +19,7 @@ document.getElementById("continue").addEventListener("click",continueClick,false
 
 function llamarencode(){
     let offset = parseInt(document.getElementById("operativeCode").value); // Convierte mi type:number en número
-    let word  = document.getElementById("message1").value; //obtiene la cadena de texto del textarea 
+    let word  = document.getElementById("message1").value.toUpperCase(); //obtiene la cadena de texto del textarea 
     let cifrado = cipher.encode(offset,word); //llama al objeto cipher.js
 
        document.getElementById("message2").value=cifrado; //Me arroja el mensaje en el segundo recuadro, después de cifrarlo
@@ -34,12 +34,12 @@ function llamarencode(){
        document.getElementById("chooseCode").innerHTML = "cifrado"; //Si el usuario escoge cifrar, manda al HTML el mensaje: cifrado
        document.getElementById("endecode").innerHTML = "Cifrar"; //Si el usuario escoge cifrar, pregunta al usuario si quiere volver a cifrar
 }
-  document.getElementById("encodeButton").addEventListener("click",llamarencode,false); //Acciona el boton cifrar
-
+  document.getElementById("encodeButton").addEventListener("click",llamarencode,false);  //Acciona el boton cifrar
+ 
 
 function llamardecode(){
      let offset = parseInt(document.getElementById("operativeCode").value);
-     let word = document.getElementById("message1").value;
+     let word = document.getElementById("message1").value.toUpperCase();
      let cifrado = cipher.decode(offset,word);
   
         document.getElementById("message2").value=cifrado;
