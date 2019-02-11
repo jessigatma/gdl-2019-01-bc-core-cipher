@@ -4,7 +4,7 @@ para definir el producto final a nivel de experiencia y de interfaz.
 Al pensar en un mensaje cifrado, lo primero que vino a mi mente fue la profesión de mi cuñado quien 
 es policía. Muchas veces hacen operativos y creí que sería muy útil para este sector. 
 
-[diseno] (diseno.jpg)
+[diseno] (C:\Users\jessg\laboratoria\gdl-2019-01-bc-core-cipher\diseno.jpg)
 
 # Principales usuarios del producto
 
