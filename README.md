@@ -4,9 +4,6 @@ para definir el producto final a nivel de experiencia y de interfaz.
 Al pensar en un mensaje cifrado, lo primero que vino a mi mente fue la profesión de mi cuñado quien 
 es policía. Muchas veces hacen operativos y creí que sería muy útil para este sector. 
 
-![Diseno] (diseno.jpg)
-
-
 # Principales usuarios del producto
 
 El producto está pensado para uso de La Policía
