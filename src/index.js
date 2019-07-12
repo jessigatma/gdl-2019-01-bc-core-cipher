@@ -29,7 +29,7 @@ function llamarencode() {
   firstScreen.style.display = "none";
   secondScreen.style.display = "none";
   thirdScreen.style.display = "block"; //Me muestra sólo la tercer pantalla
-  
+
   document.getElementById("chooseCode").innerHTML = "cifrado"; //Si el usuario escoge cifrar, manda al HTML el mensaje: cifrado
   document.getElementById("endecode").innerHTML = "Cifrar"; //Si el usuario escoge cifrar, pregunta al usuario si quiere volver a cifrar
 }
@@ -56,6 +56,7 @@ function llamardecode() {
 }
 document.getElementById("decodeButton").addEventListener("click", llamardecode, false); //Acciona el botón descifrar
 
+
 function yesClick() {
   document.getElementById("message1").value = ""; //limpia los recuadros ya utilizados anteriormente
   document.getElementById("message2").value = "";
@@ -69,6 +70,7 @@ function yesClick() {
   thirdScreen.style.display = "none";
 }
 document.getElementById("yesButton").addEventListener("click", yesClick, false); //Acciona el botón sí
+
 
 function noClick() {
   document.getElementById("message1").value = ""; //LIMPIA PANTALLA
