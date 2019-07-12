@@ -2,7 +2,7 @@ window.cipher = {
 
   encode: function (offset, word) {
 
-    let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; //defino mi arreglo 
+    let alphabet = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ¡!¿?ÁÉÍÓÚ=()/&%$#"+-@:.,;*'; //defino mi arreglo 
     const space = ' '; //defino los espacios
     let letter = word[0]; //defino letter que es donde se guardarán las iteraciones
     let texto = ""; //defino texto para que me haga una cadena de texto
@@ -14,7 +14,7 @@ window.cipher = {
       }
       else {
         const position = alphabet.indexOf(letter); //Aquí me cambia la letra a la posicion en mi alfabeto  definido al principio
-        const newPosition = (position + offset) % 26; //le digo que se recorra las veces que le diga el usuario (offset)
+        const newPosition = (position + offset) % 53; //le digo que se recorra las veces que le diga el usuario (offset)
         const newLetter = alphabet[newPosition]; //Ahora cambia la nueva posición por la nueva letra
         texto += newLetter; //Me junta cada iteracion que hizo y me muestra la frase cifrada
       }
@@ -24,7 +24,7 @@ window.cipher = {
 
   decode: function (offset, word) {
 
-    let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let alphabet = 'ABCDEFGHIJKLMNÑOPQRSTUVWXYZ¡!¿?ÁÉÍÓÚ=()/&%$#"+-@:.,;*';
     const space = ' ';
     let letter = word[0];
     let texto = "";
@@ -36,7 +36,7 @@ window.cipher = {
       }
       else {
        const position = alphabet.indexOf(letter);
-       const newPosition = (position - offset + 26 * offset) % 26; //Aquí la diferencia con el anterior es que si el usuario introducía un número mayor a 26, me daba un negativo, así que lo que hice fue multiplicar 26*cualquier número (en este caso el offset) y siempre tendré positivos
+       const newPosition = (position - offset + 53 * offset) % 53; //Aquí la diferencia con el anterior es que si el usuario introducía un número mayor a 26, me daba un negativo, así que lo que hice fue multiplicar 26*cualquier número (en este caso el offset) y siempre tendré positivos
        const newLetter = alphabet[newPosition];
         texto += newLetter;
       }
