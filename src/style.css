@@ -90,6 +90,6 @@ button {
 	}
 	textarea{
 		font-size: 18px;
-		resize: vertical;
+		resize: none;
 	}
 }
