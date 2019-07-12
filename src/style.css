@@ -43,3 +43,53 @@ button {
 #thirdScreen {
 	display: none;
 }
+
+@media only screen
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (orientation: portrait) 
+{ 
+	body { /* Estas son las características que tendra el cuerpo de mi página */
+		font-family: Georgia, sans-serif;
+		color: black;
+		text-align: center;
+		font-size: 40px ;
+	}
+	h1 { /*El título quise que tuviera otro tipo de letra, escogí impact*/
+		font-family: impact, Charcoal, sans-serif;
+		font-weight: bold;
+		font-size: 40px;
+		color: rgba(23, 10, 138, 0.733);
+	}
+	h2 { /*El subtítulo lo quise con otras características así que elegí que fuera más delgada con lighter */
+		font-family: impact, Charcoal, sans-serif;
+		color: rgba(23, 10, 138, 0.733);
+		font-weight: lighter ;
+		font-size: 37px;
+	}
+	img {
+		max-width: 50%; /*Las características de la imagen de la primer pantalla*/
+		height: auto; 
+	}
+	label{ /*lo que puse como label es la info que introduce el usuario y quiero que me la arroje con este formato*/
+		font-weight: bold;
+		font-size: 40px;
+	}
+	input{
+		font-size: 35px;
+	}
+	button {
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: beige; 
+		font-weight: bold;
+		text-transform: uppercase;
+		background-color: rgb(30, 39, 128);
+		min-height: 40px; 
+		min-width: 100px;
+		font-size: 30px;
+	}
+	textarea{
+		font-size: 18px;
+		resize: vertical;
+	}
+}
