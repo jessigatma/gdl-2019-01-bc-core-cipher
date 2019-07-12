@@ -6,12 +6,13 @@ html {
 body { /* Estas son las características que tendra el cuerpo de mi página */
 	font-family: Georgia, sans-serif;
     color: black;
-    text-align: center;
+	text-align: center;
+	font-size: x-large;
 }
 h1 { /*El título quise que tuviera otro tipo de letra, escogí impact*/
 	font-family: impact, Charcoal, sans-serif;
 	font-weight: bold;
-	font-size: xx-large;
+	font-size: xxx-large;
 	color: rgba(23, 10, 138, 0.733);
 }
 h2 { /*El subtítulo lo quise con otras características así que elegí que fuera más delgada con lighter */
@@ -19,6 +20,12 @@ h2 { /*El subtítulo lo quise con otras características así que elegí que fue
 	color: rgba(23, 10, 138, 0.733);
 	font-weight: lighter;
 	font-size: normal;
+}
+input {
+	font-size: large;
+}
+textarea{
+	font-size: large;
 }
 img {
     max-width: 28%; /*Las características de la imagen de la primer pantalla*/
