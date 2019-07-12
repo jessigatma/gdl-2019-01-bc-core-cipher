@@ -1,4 +1,4 @@
-# ¿Qué es Cipher?
+# Qué es Cipher
 
 En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
 para definir el producto final a nivel de experiencia y de interfaz.
