@@ -42,8 +42,8 @@ window.cipher = {
       else {
         const position = alphabet.indexOf(letter);
         const newPosition = (position - offset + 63 * offset) % 63; //Aquí la diferencia con el anterior es que si el usuario introducía un número mayor a 26, me daba un negativo, así que lo que hice fue multiplicar 26*cualquier número (en este caso el offset) y siempre tendré positivos
-        if(position==newPosition){
-          newPositionMenos = (position - 1 -offset + 63*offset)%63
+        if(position === newPosition){
+          newPositionMenos = (position - 1 - offset + 63*offset)%63
           const newLetter = alphabet[newPositionMenos];
           texto += newLetter;
         } 
