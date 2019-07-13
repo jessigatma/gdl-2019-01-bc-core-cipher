@@ -14,9 +14,14 @@ window.cipher = {
       }
       else {
         const position = alphabet.indexOf(letter); //Aquí me cambia la letra a la posicion en mi alfabeto  definido al principio
-        const newPosition = (position + offset) % 63; //le digo que se recorra las veces que le diga el usuario (offset)
-        const newLetter = alphabet[newPosition]; //Ahora cambia la nueva posición por la nueva letra
-        texto += newLetter; //Me junta cada iteracion que hizo y me muestra la frase cifrada
+        const newPosition = (position + offset) % 63; 
+        if(position === newPosition){
+          const newLetter = alphabet[newPosition+1];
+          texto += newLetter;  //Me junta cada iteracion que hizo y me muestra la frase cifrada
+        } else{
+          const newLetter = alphabet[newPosition]; //Ahora cambia la nueva posición por la nueva letra
+          texto += newLetter; 
+        }
       }
     }
     return texto;
@@ -35,14 +40,19 @@ window.cipher = {
         texto += space;
       }
       else {
-       const position = alphabet.indexOf(letter);
-       const newPosition = (position - offset + 63 * offset) % 63; //Aquí la diferencia con el anterior es que si el usuario introducía un número mayor a 26, me daba un negativo, así que lo que hice fue multiplicar 26*cualquier número (en este caso el offset) y siempre tendré positivos
-       const newLetter = alphabet[newPosition];
-        texto += newLetter;
+        const position = alphabet.indexOf(letter);
+        const newPosition = (position - offset + 63 * offset) % 63; //Aquí la diferencia con el anterior es que si el usuario introducía un número mayor a 26, me daba un negativo, así que lo que hice fue multiplicar 26*cualquier número (en este caso el offset) y siempre tendré positivos
+        if(position==newPosition){
+          newPositionMenos = (position - 1 -offset + 63*offset)%63
+          const newLetter = alphabet[newPositionMenos];
+          texto += newLetter;
+        } 
+        else{
+          const newLetter = alphabet[newPosition];
+          texto += newLetter;
+        }  
       }
     }
     return texto;
   }
-  
 };
-
